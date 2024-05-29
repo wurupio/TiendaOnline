@@ -4,14 +4,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    <title>@ViewBag.Title - Ouke</title>
     <link href="~/lib/font-awesome/css/all.css">
     <link>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    <title>@ViewBag.Title - Ouke</title>
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -20,104 +20,106 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
-        <div class="container">
-            @Html.ActionLink("Merry Model", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="justify-content-between d-flex">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>
-                        <a class="nav-link" href="#">
-                            <input style="width: 400px" type="text" id="fname" name="fname">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:70px;">
+            <div class="container-fluid">
+                @Html.ActionLink("Ouke", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            @Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Nosotros", "About", "Home", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fa-solid fa-user"></i>
+
+                                <!--<span class="badge badge-pill badge-danger">3</span>-->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="badge badge-pill badge-danger">3</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
+    <!--Contenido-->
     <div class="">
         @RenderBody()
         <hr />
     </div>
-    <div style="background-color: black">
-        <footer>
-            <div class="container text-center text-md-left">
-                <div class="row text-center text-md-left">
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h5 class="text-white text-uppercase mb-4 font-weight-bold">Sobre Nosotros</h5>
-                        <p class="text-white">Somos una tienda de ropa en línea que ofrece las últimas tendencias de moda a precios asequibles.</p>
-                    </div>
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 text-white">
-                        <h5 class="text-uppercase mb-4 font-weight-bold">Productos</h5>
-                        <p><a href="#" class="text-white" style="text-decoration: none;">Vestidos</a></p>
-                        <p><a href="#" class="text-white" style="text-decoration: none;">Pantalones</a></p>
-                        <p><a href="#" class="text-white" style="text-decoration: none;">Blusas</a></p>
-                        <p><a href="#" class="text-white" style="text-decoration: none;">Faldas</a></p>
-                    </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 text-white">
-                        <h5 class="text-uppercase mb-4 font-weight-bold">Enlaces Útiles</h5>
-                        <p><a href="#" class="text-white" style="text-decoration: none;">Tu Cuenta</a></p>
-                        <p><a href="#" class="text-white" style="text-decoration: none;">Carrito de Compras</a></p>
-                        <p><a href="#" class="text-white" style="text-decoration: none;">Seguimiento de Pedidos</a></p>
-                        <p><a href="#" class="text-white" style="text-decoration: none;">Ayuda</a></p>
-                    </div>
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-white">
-                        <h5 class="text-uppercase mb-4 font-weight-bold">Contacto</h5>
-                        <p><i class="fas fa-home mr-3 text-white"></i> Av. Universitaria - Los Olivos</p>
-                        <p><i class="fas fa-envelope mr-3 text-white"></i> MerryModel@gmail.com</p>
-                        <p><i class="fas fa-phone mr-3 text-white"></i> + 902 652 748</p>
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr class="mb-4 text-white">
-                    <div class="align-items-center">
-                        <div class="">
-                            <p class="text-white">
-                                Copyright &copy; @DateTime.Now.Year
-                                <br>
-                                Todos los derechos reservados por:
-                                <a href="#" style="text-decoration: none;">
-                                    <strong class="text-warning">MerryModel</strong>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
+
+    <!--Footer-->
+    <footer class="footer bg-white py-4">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="text-decoration: none;">Inicio</a></li>
+                        <li><a href="#" style="text-decoration: none;">Productos</a></li>
+                        <li><a href="#" style="text-decoration: none;">Nosotros</a></li>
+                        <li><a href="#" style="text-decoration: none;">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md">
+                    <h5>Categorias</h5>
+                    <p><a href="#" style="text-decoration: none;">Hoddies</a></p>
+                    <p><a href="#" style="text-decoration: none;">Jeans</a></p>
+                    <p><a href="#" style="text-decoration: none;">Tops</a></p>
+                    <p><a href="#" style="text-decoration: none;">Casacas</a></p>
+                    <p><a href="#" style="text-decoration: none;">Camisas</a></p>
+                    <p><a href="#" style="text-decoration: none;">Shorts</a></p>
+                </div>
+
+                <div class="col-md">
+                    <h5>Tu cuenta</h5>
+                    <p><a href="#" style="text-decoration: none;">Carrito de Compras</a></p>
+                    <p><a href="#" style="text-decoration: none;">Seguimiento de Pedidos</a></p>
+                    <p><a href="#" style="text-decoration: none;">Ayuda</a></p>
+                </div>
+
+                <div class="col-md">
+                    <h5>Contacto</h5>
+                    <p> <a href="#" style="text-decoration: none;">Av. Universitaria - Los Olivos</a></p>
+                    <p> <a href="#" style="text-decoration: none;">MerryModel@gmail.com</a></p>
+                    <p> <a href="#" style="text-decoration: none;">+ 902 652 748</a></p>
+                </div>
+
+                <div class="col-md">
+                    <h5>Síguenos</h5>
+                     <ul class="list-unstyled list-inline">
+                          <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                          <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                     </ul>
                 </div>
             </div>
-        </footer>
-    </div>
+            
+            <hr>
+            <div class="text-center">
+                <p>&copy; @DateTime.Now.Year Ouke. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
 
     @Scripts.Render("~/bundles/jquery")
@@ -125,4 +127,4 @@
     @RenderSection("scripts", required: false)
 </body>
 
-</html>
+    </html>
