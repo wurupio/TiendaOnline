@@ -19,14 +19,16 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
+
 <body>
 
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:70px;">
-            <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-toggleable-sm navbar-dark  p-md-3 text-white">
+            <div class="container">
                 @Html.ActionLink("Ouke", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle Navbar" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -56,6 +58,7 @@
             </div>
         </nav>
     </header>
+
 
     <!--Contenido-->
     <div class="">
@@ -125,6 +128,20 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+
+    <script>
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-dark', 'shadow');
+            } else {
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        });
+    </script>
+
 </body>
 
     </html>
