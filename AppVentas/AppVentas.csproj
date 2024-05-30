@@ -201,6 +201,7 @@
     <Content Include="Recursos\Img\Noticias\Noticia02.jpg" />
     <Content Include="Recursos\Img\Noticias\Noticia03.jpg" />
     <Content Include="Recursos\Img\Noticias\Noticia04.jpg" />
+    <Content Include="Recursos\Img\Publicidades\publicidad02.jpg" />
     <Content Include="Recursos\Multimedia\merymodel.mp4" />
     <Content Include="Recursos\Multimedia\ouke.mp4" />
     <Content Include="Scripts\bootstrap.bundle.js" />
