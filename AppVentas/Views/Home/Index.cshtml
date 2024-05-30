@@ -3,9 +3,12 @@
 }
 
 @*Slider*@
-<div class="container-fluid p-0 ">
-    <div class="position-relative">
-        <video autoplay muted loop class="video-fluid" style="width: 100%;">
+
+<!--VIDEO-INICIO-->
+
+<div class="container-fluid p-0">
+    <div class="position-relative" style="overflow: hidden;">
+        <video autoplay muted loop class="video-fluid" style="width: 100%; height: auto;">
             <source src="~/Recursos/Multimedia/merymodel.mp4" type="video/mp4">
         </video>
 
@@ -21,45 +24,95 @@
                 <li><a href="#" class="text-white fa-2x"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </div>
-
     </div>
 </div>
 
+
 @*CONTENIDO*@
+
+<!--INFORMACION BASICA-->
+
+<div class="container-fluid p-0" style="background-color: #FFFDF4; ">
+    <div class="row p-0 py-5">
+        <div class="col-md-3">
+            <div class="p-3 rounded text-center">
+                <h5>Título 1</h5>
+                <p class="small">Texto pequeño debajo del título 1</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="p-3 rounded text-center">
+                <h5>Título 2</h5>
+                <p class="small">Texto pequeño debajo del título 2</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="p-3 rounded text-center">
+                <h5>Título 3</h5>
+                <p class="small">Texto pequeño debajo del título 3</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="p-3 rounded text-center">
+                <h5>Título 4</h5>
+                <p class="small">Texto pequeño debajo del título 4</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!--NOSOTROS-->
 
-<div class="container">
-    <div class="card mb-3" style="max-width: 540px;">
+<div class="container-fluid pt-5 p-0">
+    <div class="card mb-3 mx-auto border-0">
         <div class="row g-0">
-            <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
+            <div class="col-md-6">
+                <img src="~/Recursos/Img/Nosotros/nosotros01.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="...">
             </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="col-md-6">
+                <div class="card-body px-md-5 pt-md-5">
+                    <h1 class="card-title display-3" style="font-weight: bold;">Merry Model</h1>
+                    <p class="card-text pt-3 fs-5">
+                        Somos una marca de ropa peruana que fusiona la rica herencia cultural de Perú con la elegancia
+                        y sofisticación del estilo francés. Nuestra pasión por la moda nos lleva a crear piezas únicas y atemporales que reflejan calidad
+                        y diseño innovador. En Merry Model, creemos que la moda es una forma de expresión personal y nos esforzamos por ofrecer prendas
+                        que empoderen a nuestros clientes, haciéndolos sentir seguros y elegantes en cualquier ocasión.
+                    </p>
+                    <p class="card-text">
+                        <small class="text-muted">Mas información </small>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!--COLECCIONES-->
-<div class="container mt-5">
-    <div class="row">
-        <div class="col">
-            <div class="d-flex justify-content-between align-items-center">
-                <h2 class="d-inline">Nuestras Colecciones</h2>
-                <button class="btn btn-dark float-right">Explorar todo</button>
-            </div>
-            <hr>
-            <br>
+<!--PUBLICIDAD 01-->
+<div class="p-0 pt-5">
+    <div class="card text-white border-0 position-relative">
+        <img src="~/Recursos/Img/Publicidades/publicidad01.jpeg" style="width: 100%;" alt="...">
+        <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <h1 style="font-size: 3vw;" class="pt-2">Scape´s Collection</h1>
+            <p class="lead pt-2" style="font-size: 1.5vw;">Cada prenda cuenta una historia de artesanía y creatividad, de líneas dibujadas y rediseñadas, de límites superados y redefinidos.</p>
+            <button class="btn btn-outline-light" style="font-size: 1.5vw;">Leer más</button>
         </div>
     </div>
+</div>
 
-    <div class="row">
+
+<!--COLECCIONES-->
+<div class="container mt-5">
+
+    <div class="row text-center pt-2">
+        <div class="col-12">
+            <h2>Nuestras Colecciones</h2>
+            <!--<button class="btn btn-dark float-right">Explorar todo</button>-->
+        </div>
+        <br />
+
+    </div>
+    <div class="row pt-5">
         <div class="col-md-4">
             <div class="card border-0">
 
@@ -99,12 +152,11 @@
 </div>
 
 <!--CATALOGO-->
-<div class="container">
-    <br /><br />
+<div class="container pt-5">
     <div class="row">
         <div class="col">
             <div class="d-flex justify-content-between align-items-center">
-                <h2 class="d-inline">Nuestro Catologo</h2>
+                <h2 class="d-inline">Nuestro Catálogo</h2>
                 <button class="btn btn-dark float-right">Explorar todo</button>
             </div>
             <hr>
@@ -112,87 +164,75 @@
         </div>
     </div>
 
-    <div class="row mt-5">
-
-        <div class="col-md-4">
-            <div class="card h-100 mb-4 shadow-sm">
-                <img src="https://i.pinimg.com/564x/d5/e9/9b/d5e99b19563de43c3ff23392e9afb252.jpg" class="card-img-top img-fluid" style="height: 500px; object-fit: cover;" alt="Imagen de prenda 1">
-                <div class="card-body">
-                    <h5 class="card-title">Camisa de vestir</h5>
-                    <p class="card-text">Camisa de vestir de alta calidad, ideal para ocasiones formales.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-muted">$49.99</span>
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Agregar al carrito</a>
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="~/Recursos/Img/Catalogo/001.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre del Producto 1</h5>
+                            <p class="card-text">Precio: $XX.XX</p>
+                            <a href="#" class="btn btn-secondary">Ver Detalle</a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="~/Recursos/Img/Catalogo/002.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre del Producto 2</h5>
+                            <p class="card-text">Precio: $XX.XX</p>
+                            <a href="#" class="btn btn-secondary">Ver Detalle</a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="~/Recursos/Img/Catalogo/003.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre del Producto 3</h5>
+                            <p class="card-text">Precio: $XX.XX</p>
+                            <a href="#" class="btn btn-secondary">Ver Detalle</a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 mb-4 shadow-sm">
-                <img src="https://i.pinimg.com/564x/11/ce/b0/11ceb0fb0c340bc3c0a088893dc3570a.jpg" class="card-img-top img-fluid" style="height: 500px; object-fit: cover;" alt="Imagen de prenda 2">
-                <div class="card-body">
-                    <h5 class="card-title">Vestido de verano</h5>
-                    <p class="card-text">Vestido ligero y fresco, perfecto para los días calurosos de verano.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-muted">$29.99</span>
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Agregar al carrito</a>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="~/Recursos/Img/Catalogo/004.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre del Producto 4</h5>
+                            <p class="card-text">Precio: $XX.XX</p>
+                            <a href="#" class="btn btn-secondary">Ver Detalle</a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 mb-4 shadow-sm">
-                <img src="https://i.pinimg.com/564x/21/4d/54/214d542c316427a6d1161c12bbec2877.jpg" class="card-img-top img-fluid" style="height: 500px; object-fit: cover;" alt="Imagen de prenda 3">
-                <div class="card-body">
-                    <h5 class="card-title">Pantalón de mezclilla</h5>
-                    <p class="card-text">Pantalón de mezclilla de corte clásico, versátil y duradero.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-muted">$39.99</span>
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Agregar al carrito</a>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="~/Recursos/Img/Catalogo/005.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre del Producto 5</h5>
+                            <p class="card-text">Precio: $XX.XX</p>
+                            <a href="#" class="btn btn-secondary">Ver Detalle</a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row mt-5">
-        <div class="col-md-4">
-            <div class="card h-100 mb-4 shadow-sm">
-                <img src="https://i.pinimg.com/564x/e9/0d/69/e90d693b3678978b54ea9ece23354da5.jpg" class="card-img-top img-fluid" style="height: 500px; object-fit: cover;" alt="Imagen de prenda 1">
-                <div class="card-body">
-                    <h5 class="card-title">Camisa de vestir</h5>
-                    <p class="card-text">Camisa de vestir de alta calidad, ideal para ocasiones formales.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-muted">$49.99</span>
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 mb-4 shadow-sm">
-                <img src="https://i.pinimg.com/736x/5b/0f/3c/5b0f3c30f69d3a870d3f41c3f5a8a494.jpg" class="card-img-top img-fluid" style="height: 500px; object-fit: cover;" alt="Imagen de prenda 2">
-                <div class="card-body">
-                    <h5 class="card-title">Vestido de verano</h5>
-                    <p class="card-text">Vestido ligero y fresco, perfecto para los días calurosos de verano.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-muted">$29.99</span>
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 mb-4 shadow-sm">
-                <img src="https://i.pinimg.com/564x/a8/51/ca/a851caf5178517061e2f14e20d0002ba.jpg" class="card-img-top img-fluid" style="height: 500px; object-fit: cover;" alt="Imagen de prenda 3">
-                <div class="card-body">
-                    <h5 class="card-title">Pantalón de mezclilla</h5>
-                    <p class="card-text">Pantalón de mezclilla de corte clásico, versátil y duradero.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-muted">$39.99</span>
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Agregar al carrito</a>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="~/Recursos/Img/Catalogo/006.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre del Producto 6</h5>
+                            <p class="card-text">Precio: $XX.XX</p>
+                            <a href="#" class="btn btn-secondary">Ver Detalle</a>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,74 +240,30 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="row mt-5">
-        <div class="col-md-4">
-            <div class="card h-100 mb-4 shadow-sm">
-                <img src="https://i.pinimg.com/564x/2c/54/a2/2c54a2fca18d54d9241990ce6262f448.jpg" class="card-img-top img-fluid" style="height: 500px; object-fit: cover;" alt="Imagen de prenda 1">
-                <div class="card-body">
-                    <h5 class="card-title">Camisa de vestir</h5>
-                    <p class="card-text">Camisa de vestir de alta calidad, ideal para ocasiones formales.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-muted">$49.99</span>
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 mb-4 shadow-sm">
-                <img src="https://i.pinimg.com/564x/99/53/de/9953dee47f9214cf7bc313dafb00cd04.jpg" class="card-img-top img-fluid" style="height: 500px; object-fit: cover;" alt="Imagen de prenda 2">
-                <div class="card-body">
-                    <h5 class="card-title">Vestido de verano</h5>
-                    <p class="card-text">Vestido ligero y fresco, perfecto para los días calurosos de verano.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-muted">$29.99</span>
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 mb-4 shadow-sm">
-                <img src="https://i.pinimg.com/564x/8e/42/88/8e42885609f0179cc88137bf54c43897.jpg" class="card-img-top img-fluid" style="height: 500px; object-fit: cover;" alt="Imagen de prenda 3">
-                <div class="card-body">
-                    <h5 class="card-title">Pantalón de mezclilla</h5>
-                    <p class="card-text">Pantalón de mezclilla de corte clásico, versátil y duradero.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-muted">$39.99</span>
-                        <a href="#" class="btn btn-sm btn-outline-secondary">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
+<!--PUBLICIDAD 02-->
+<div class="p-0 pt-5">
+    <div class="card text-white border-0 position-relative">
+        <img src="~/Recursos/Img/Publicidades/publicidad03.jpeg" style="width: 100%;" alt="...">
+        <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <h1 style="font-size: 3vw;" class="pt-2">Line´s Collection</h1>
+            <p class="lead pt-2" style="font-size: 1.5vw;">Cada prenda cuenta una historia de artesanía y creatividad, de líneas dibujadas y rediseñadas, de límites superados y redefinidos.</p>
+            <button class="btn btn-outline-light" style="font-size: 1.5vw;">Leer más</button>
         </div>
     </div>
 </div>
 
-<!--PUBLICIDAD-->
-
-<div class="container p-5">
-    <div class="card bg-dark text-white">
-        <img src="~/Recursos/Img/Publicidades/publicidad02.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text">Last updated 3 mins ago</p>
-        </div>
-    </div>
-</div>
 
 <!--NOTICIAS-->
 
-<div class="container mt-5 p-5">
+<div class="container mt-5 pt-2">
 
-    <div class="row text-center">
+    <div class="row text-center pt-2">
         <div class="col-12">
             <h2>¡Mantente conectado!</h2>
             <p>Únete a nuestra comunidad.</p>
         </div>
-    </div><br />
-
+    </div>
+    <br />
     <div class="row">
 
         <div class="col-md-3">
@@ -311,10 +307,11 @@
         </div>
 
     </div>
-</div><br /><br />
+</div>
+<br />
+<br />
 
 <!--.............................................................................................-->
-
 @*<div class="row">
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
                 <h2 id="gettingStartedTitle">Getting started</h2>
