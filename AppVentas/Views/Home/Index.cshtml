@@ -30,10 +30,10 @@
 
 @*CONTENIDO*@
 
-<!--INFORMACION BASICA-->
+<!--INFORMACION BASICA
 
-<div class="container-fluid p-0" style="background-color: #FFFDF4; ">
-    <div class="row p-0 py-5">
+<div class="container-fluid" style="background-color: #FFFDF4; ">
+    <div class="row no-gutters p-0 py-5">
         <div class="col-md-3">
             <div class="p-3 rounded text-center">
                 <h5>Título 1</h5>
@@ -59,19 +59,24 @@
             </div>
         </div>
     </div>
-</div>
-
-
+</div>-->
 <!--NOSOTROS-->
 
 <div class="container-fluid pt-5 p-0">
-    <div class="card mb-3 mx-auto border-0">
-        <div class="row g-0">
-            <div class="col-md-6">
-                <img src="~/Recursos/Img/Nosotros/nosotros01.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="...">
+    <div class="card mb-3 mx-auto border-0 px-4 pt-5">
+        <div class="row g-0 pb-5">
+            <div class="col-md-7 p-5">
+                <div class="d-flex px-5 pt-4 pb-5">
+                    <div class="container pt-5">
+                        <img src="~/Recursos/Img/Nosotros/nosotros01.jpg" class="img-fluid w-100 h-100" style="object-fit: cover; transition: all 600ms; transform: translateY(-100px);" alt="Alternate Text" />
+                    </div>
+                    <div class="container">
+                        <img src="~/Recursos/Img/Nosotros/nosotros02.jpg" class="img-fluid w-100 h-100" style="object-fit: cover; transition: all 600ms; transform: translateY(100px);" alt="Alternate Text" />
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <div class="card-body px-md-5 pt-md-5">
+            <div class="col-md-4">
+                <div class="card-body pt-md-5 pt-4" style=" padding-right: 40px;">
                     <h1 class="card-title display-3" style="font-weight: bold;">Merry Model</h1>
                     <p class="card-text pt-3 fs-5">
                         Somos una marca de ropa peruana que fusiona la rica herencia cultural de Perú con la elegancia
@@ -88,12 +93,17 @@
     </div>
 </div>
 
+
+
+
+
+
 <!--PUBLICIDAD 01-->
 <div class="p-0 pt-5">
     <div class="card text-white border-0 position-relative">
         <img src="~/Recursos/Img/Publicidades/publicidad01.jpeg" style="width: 100%;" alt="...">
         <div class="position-absolute top-50 start-50 translate-middle text-center">
-            <h1 style="font-size: 3vw;" class="pt-2">Scape´s Collection</h1>
+            <h1 style="font-size: 3vw;" class="pt-2">Escape´s Collection</h1>
             <p class="lead pt-2" style="font-size: 1.5vw;">Cada prenda cuenta una historia de artesanía y creatividad, de líneas dibujadas y rediseñadas, de límites superados y redefinidos.</p>
             <button class="btn btn-outline-light" style="font-size: 1.5vw;">Leer más</button>
         </div>
@@ -106,7 +116,7 @@
 
     <div class="row text-center pt-2">
         <div class="col-12">
-            <h2>Nuestras Colecciones</h2>
+            <h1>Nuestras Colecciones</h1>
             <!--<button class="btn btn-dark float-right">Explorar todo</button>-->
         </div>
         <br />
@@ -153,10 +163,10 @@
 
 <!--CATALOGO-->
 <div class="container pt-5">
-    <div class="row">
+    <div class="row pt-3">
         <div class="col">
             <div class="d-flex justify-content-between align-items-center">
-                <h2 class="d-inline">Nuestro Catálogo</h2>
+                <h1 class="d-inline">Nuestro Catálogo</h1>
                 <button class="btn btn-dark float-right">Explorar todo</button>
             </div>
             <hr>
@@ -164,75 +174,70 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row pt-3">
         <div class="col">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="~/Recursos/Img/Catalogo/001.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del Producto 1</h5>
-                            <p class="card-text">Precio: $XX.XX</p>
-                            <a href="#" class="btn btn-secondary">Ver Detalle</a>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
+                    <div class="card mb-4 border-0">
+                        <img src="~/Recursos/Img/Catalogo/001.jpg" alt="...">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">MINI DRESS <a href="#" class="text-black"><i class="fas fa-eye"></i></a></h5>
+                            <p class="card-text mb-0">Precio: $310</p>
                         </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 border-0">
+                        <img src="~/Recursos/Img/Catalogo/002.jpg" alt="...">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">MINI DRESS <a href="#" class="text-black"><i class="fas fa-eye"></i></a></h5>
+                            <p class="card-text mb-0">Precio: $310</p>
+                        </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="~/Recursos/Img/Catalogo/002.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del Producto 2</h5>
-                            <p class="card-text">Precio: $XX.XX</p>
-                            <a href="#" class="btn btn-secondary">Ver Detalle</a>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
+                    <div class="card mb-4 border-0">
+                        <img src="~/Recursos/Img/Catalogo/006.jpg" alt="...">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">MINI DRESS <a href="#" class="text-black"><i class="fas fa-eye"></i></a></h5>
+                            <p class="card-text mb-0">Precio: $310</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="~/Recursos/Img/Catalogo/003.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del Producto 3</h5>
-                            <p class="card-text">Precio: $XX.XX</p>
-                            <a href="#" class="btn btn-secondary">Ver Detalle</a>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
-                        </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="~/Recursos/Img/Catalogo/004.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del Producto 4</h5>
-                            <p class="card-text">Precio: $XX.XX</p>
-                            <a href="#" class="btn btn-secondary">Ver Detalle</a>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
+                    <div class="card mb-4 border-0">
+                        <img src="~/Recursos/Img/Catalogo/004.jpg" alt="...">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">MINI DRESS <a href="#" class="text-black"><i class="fas fa-eye"></i></a></h5>
+                            <p class="card-text mb-0">Precio: $310</p>
                         </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="~/Recursos/Img/Catalogo/005.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del Producto 5</h5>
-                            <p class="card-text">Precio: $XX.XX</p>
-                            <a href="#" class="btn btn-secondary">Ver Detalle</a>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
+                    <div class="card mb-4 border-0">
+                        <img src="~/Recursos/Img/Catalogo/005.jpg" alt="...">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">MINI DRESS <a href="#" class="text-black"><i class="fas fa-eye"></i></a></h5>
+                            <p class="card-text mb-0">Precio: $310</p>
                         </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="~/Recursos/Img/Catalogo/006.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del Producto 6</h5>
-                            <p class="card-text">Precio: $XX.XX</p>
-                            <a href="#" class="btn btn-secondary">Ver Detalle</a>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
+                    <div class="card mb-4 border-0">
+                        <img src="~/Recursos/Img/Catalogo/003.jpg" alt="...">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">MINI DRESS <a href="#" class="text-black"><i class="fas fa-eye"></i></a></h5>
+                            <p class="card-text mb-0">Precio: $310</p>
                         </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -255,11 +260,11 @@
 
 <!--NOTICIAS-->
 
-<div class="container mt-5 pt-2">
+<div class="container mt-5 pt-2 pb-5">
 
     <div class="row text-center pt-2">
         <div class="col-12">
-            <h2>¡Mantente conectado!</h2>
+            <h1>¡Mantente conectado!</h1>
             <p>Únete a nuestra comunidad.</p>
         </div>
     </div>
@@ -334,7 +339,4 @@
             </section>
         </div>
     </main>*@
-
-
-
 
