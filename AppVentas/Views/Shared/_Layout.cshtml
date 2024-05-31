@@ -42,6 +42,9 @@
                             <a href="#Nosotros" class="nav-link">Nosotros</a>
                         </li>
                         <li class="nav-item">
+                            <a href="#Nosotros" class="nav-link">Galeria</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#contact-section">Contacto</a>
                         </li>
 
@@ -49,17 +52,26 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>-->
-
-                        <li class="nav-item">
+                        <li class="nav-item ml-2">
                             <a class="nav-link" href="#">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <i class="fa-solid fa-heart"></i>
-                                <i class="fas fa-shopping-cart"></i>
-                                <i class="fa-solid fa-user"></i>
-
+                                <i class="fa-solid fa-magnifying-glass mr-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-heart mr-2"></i>
                                 <!--<span class="badge badge-pill badge-danger">3</span>-->
                             </a>
                         </li>
+                        <li class="nav-item ml-2">
+                            <a href="@Url.Action("Carrito", "Home")" class="nav-link mr-2"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <i class="fa-solid fa-user mr-2"></i>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>

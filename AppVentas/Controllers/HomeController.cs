@@ -26,5 +26,12 @@ namespace AppVentas.Controllers
 
             return View();
         }
+
+        public ActionResult Carrito()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }
