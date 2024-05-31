@@ -19,6 +19,101 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
+<style>
+    #scrollToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        left: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #000;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+        #scrollToTopBtn:hover {
+            background-color: #555;
+        }
+
+    #chatbotBtn {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #000;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+        #chatbotBtn:hover {
+            background-color: #555;
+        }
+
+    /* Chatbot modal styles */
+    #chatbotModal {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        z-index: 100;
+        border: 1px solid #ccc;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        max-width: 90%;
+        overflow: hidden;
+    }
+
+    #chatbotModalHeader {
+        background-color: #000;
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #chatbotModalBody {
+        padding: 10px;
+        height: 300px;
+        overflow-y: auto;
+    }
+
+    #chatbotModalFooter {
+        padding: 10px;
+        display: flex;
+        gap: 10px;
+    }
+
+        #chatbotModalFooter input {
+            flex-grow: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #chatbotModalFooter button {
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+</style>
+
 </head>
 
 <body>
@@ -49,9 +144,9 @@
                         </li>
 
                         <!--<form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </form>-->
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>-->
                         <li class="nav-item ml-2">
                             <a class="nav-link" href="#">
                                 <i class="fa-solid fa-magnifying-glass mr-2"></i>
@@ -77,6 +172,31 @@
             </div>
         </nav>
     </header>
+
+    <!-- Scroll-->
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- Chatbot -->
+    <button id="chatbotBtn" title="Chat with us">
+        <i class="fa fa-comments"></i>
+    </button>
+
+    <!-- Chatbot Modal -->
+    <div id="chatbotModal">
+        <div id="chatbotModalHeader">
+            <span>Chatbot</span>
+            <button type="button" class="btn-close" onclick="closeChatbot()" aria-label="Close" style="background: none; border: none; color: white; font-size: 20px;">&times;</button>
+        </div>
+        <div id="chatbotModalBody">
+
+        </div>
+        <div id="chatbotModalFooter">
+            <input type="text" id="chatbotInput" placeholder="Escribe un mensaje...">
+            <button type="button" onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
 
 
     <!--Contenido-->
@@ -162,6 +282,44 @@
         });
 
     </script>
+
+    <script>
+
+        let mybutton = document.getElementById("scrollToTopBtn");
+        let chatButton = document.getElementById("chatbotBtn");
+
+
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+
+        function topFunction() {
+            let scrollToTop = window.setInterval(function () {
+                let pos = window.pageYOffset;
+                if (pos > 0) {
+                    window.scrollTo(0, pos - 40);
+                } else {
+                    window.clearInterval(scrollToTop);
+                }
+            }, 16);
+        }
+
+
+        chatButton.addEventListener('click', function () {
+            alert('Chatbot button clicked!');
+        });
+    </script>
+
+
 
 </body>
 
