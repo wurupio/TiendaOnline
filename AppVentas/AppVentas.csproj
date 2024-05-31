@@ -243,6 +243,8 @@
     <Content Include="Recursos\Img\Colecciones\coleccion01.jpg" />
     <Content Include="Recursos\Img\Colecciones\coleccion02.jpg" />
     <Content Include="Recursos\Img\Colecciones\coleccion03.jpg" />
+    <Content Include="Recursos\Img\Login\logine01.jpg" />
+    <Content Include="Recursos\Img\Login\logine02.jpg" />
     <Content Include="Recursos\Img\Nosotros\nosotros01.jpg" />
     <Content Include="Recursos\Img\Nosotros\nosotros02.jpg" />
     <Content Include="Recursos\Img\Noticias\Noticia01.jpg" />

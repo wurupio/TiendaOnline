@@ -280,36 +280,38 @@
 </div>
 
 <!--MODALES-->
-
 <!--LOGIN-->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
             <div class="modal-body">
-                <!-- Aquí va el formulario de inicio de sesión -->
-                <form>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <button type="button" class="btn-close p-4" data-bs-dismiss="modal" aria-label="Close" style="position: absolute; top: 0; right: 0;"></button>
+                <div class="row p-0">
+                    <div class="col-md-6 p-0">
+                        <img src="~/Recursos/Img/Login/logine01.jpg" alt="Imagen de Usuario" class="img-fluid">
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    <div class="col-md-6 pt-5 px-5">
+                        <h2 style="font-size:bold;">Suscríbete</h2>
+                        <p class="pt-2">Regístrese para recibir acceso temprano a nuestras ofertas. Nuestra selección de productos es amplia y ofrece algo para todos. Compra ahora y ahorra.</p>
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                            </div>
+                            <br />
+                            <button type="submit" class="btn btn-dark container-fluid">¡No, Gracias!</button>
+                        </form>
                     </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
+
 
 <!-- 01-->
 <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
