@@ -252,6 +252,7 @@
     <Content Include="Recursos\Img\Publicidades\publicidad01.jpeg" />
     <Content Include="Recursos\Img\Publicidades\publicidad02.jpeg" />
     <Content Include="Recursos\Img\Publicidades\publicidad03.jpeg" />
+    <Content Include="Recursos\Img\Publicidades\publicidad04.jpeg" />
     <Content Include="Recursos\Multimedia\merymodel.mp4" />
     <Content Include="Recursos\Multimedia\ouke.mp4" />
     <Content Include="Scripts\bootstrap.bundle.js" />
