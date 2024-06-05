@@ -1,0 +1,199 @@
+﻿@{
+    ViewBag.Title = "Carrito";
+}
+
+<br />
+
+<div class="container-fluid mt-5 py-5 px-5">
+    <div class="row px-5">
+
+        <div class="col-lg-8">
+            <div class="d-flex justify-content-between">
+                <h2>Tu carrito de compras</h2>
+                <a href="@Url.Action("Index", "Productos")" class="btn btn-link text-dark text-decoration-none">Seguir navegando ></a>
+            </div>
+            <hr />
+
+            <table class="table pt-2">
+                <thead>
+                    <tr class="text-center">
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="align-middle align-items-center">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="~/Recursos/Img/Catalogo/001.jpg" alt="Producto" style="width: 120px;">
+                                <span class="ms-2"><strong>Nombre del Producto</strong> <br />Talla: S</span>
+                            </div>
+                        </td>
+                        <td class="text-center">$310</td>
+                        <td class="align-middle">
+                            <div class="d-flex justify-content-center">
+                                <input type="number" class="form-control text-center" value="1" min="1" style="width: 60px;">
+                            </div>
+                        </td>
+                        <td class="text-center">$310</td>
+                        <td class="align-middle">
+                            <button type="button" class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr class="align-middle align-items-center">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="~/Recursos/Img/Catalogo/002.jpg" alt="Producto" style="width: 120px;">
+                                <span class="ms-2"><strong>Nombre del Producto</strong> <br />Talla: S</span>
+                            </div>
+                        </td>
+                        <td class="text-center">$240</td>
+                        <td class="align-middle">
+                            <div class="d-flex justify-content-center">
+                                <input type="number" class="form-control text-center" value="1" min="1" style="width: 60px;">
+                            </div>
+                        </td>
+                        <td class="text-center">$240</td>
+                        <td class="align-middle">
+                            <button type="button" class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <!--CODIGO PROMOCIONAL-->
+            <div class="position-relative mt-3 pt-3" style="cursor: pointer;">
+                <span id="promo-toggle"><i class="fas fa-gift me-2"></i> Ingresar código promocional</span>
+            </div>
+
+            <div id="promo-form" style="display: none;" class="mt-3">
+                <div class="row w-75">
+
+                    <div class="col">
+                        <input type="text" class="form-control" id="promo-code" placeholder="Código promocional">
+                    </div>
+
+                    <div class="col p-0">
+                        <button type="submit" class="btn btn-dark w-50">Aplicar</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Columna derecha - 30% -->
+        <div class="col-lg-4">
+            <div class="summary border border-dark border-1 p-5 d-flex flex-column">
+                <h2 class="mb-4">Resumen</h2>
+
+                <!--ENVIO-->
+                <div class="d-flex justify-content-between align-items-center border-top border-bottom border-dark py-3 mx-0" style="cursor: pointer;" id="shipping-toggle">
+                    <span>Estimación de Envíos</span>
+                    <span id="toggle-icon"><i class="fa-solid fa-chevron-up fa-rotate-180"></i></span>
+                </div>
+
+                <!--Opciones de envio-->
+                <div id="shipping-options" class="d-none pt-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>Recojo en oficina</p>
+                        <i class="option-icon fa-regular fa-circle"></i>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>Lima</p>
+                        <i class="option-icon fa-regular fa-circle"></i>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>Provincia</p>
+                        <i class="option-icon fa-regular fa-circle"></i>
+                    </div>
+                    <hr />
+                </div>
+                <!---->
+
+                <div class="d-flex justify-content-between pt-4">
+                    <p>Subtotal</p>
+                    <p class="text-end">$310</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>Envío</p>
+                    <p class="text-end">$12</p>
+                </div>
+
+                <hr />
+                <div class="d-flex justify-content-between pt-3">
+                    <p>Total</p>
+                    <p class="text-end">$310</p>
+                </div>
+                <button class="btn btn-dark w-100 border-0 rounded-0 mt-3">Proceder al Pago</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+<script>
+
+    function togglePromoForm() {
+        var promoForm = document.getElementById("promo-form");
+        if (promoForm.style.display === "none") {
+            promoForm.style.display = "block";
+        } else {
+            promoForm.style.display = "none";
+        }
+    }
+
+    //Eventos
+    document.getElementById("promo-toggle").addEventListener("click", togglePromoForm);
+    document.getElementById("apply-btn").addEventListener("click", function () {
+        togglePromoForm();
+    });
+
+</script>
+
+<script>
+    var optionsVisible = false;
+    var toggleIcon = document.getElementById("toggle-icon");
+    var shippingOptions = document.getElementById("shipping-options");
+    var options = document.querySelectorAll("#shipping-options .d-flex");
+
+    document.getElementById("shipping-toggle").addEventListener("click", function () {
+        if (optionsVisible) {
+            shippingOptions.classList.add("d-none");
+            toggleIcon.innerHTML = "<i class='fa-solid fa-chevron-up fa-rotate-180'></i>";
+        } else {
+            shippingOptions.classList.remove("d-none");
+            toggleIcon.innerHTML = "<i class='fa-solid fa-chevron-up'></i>";
+        }
+        optionsVisible = !optionsVisible;
+    });
+
+
+    options.forEach(function (option) {
+        option.addEventListener("click", function () {
+            options.forEach(function (opt) {
+                opt.querySelector(".option-icon").classList.remove("fa-solid");
+                opt.querySelector(".option-icon").classList.add("fa-regular");
+            });
+            this.querySelector(".option-icon").classList.remove("fa-regular");
+            this.querySelector(".option-icon").classList.add("fa-solid");
+        });
+    });
+
+</script>
+
+

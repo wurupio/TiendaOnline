@@ -137,10 +137,10 @@
                             <a href="#Nosotros" class="nav-link">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#Nosotros" class="nav-link">Galeria</a>
+                            <a href="#Nosotros" class="nav-link">Catalogo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact-section">Contacto</a>
+                            <a class="nav-link" href="#contact-section">Blog</a>
                         </li>
 
                         <!--<form class="d-flex">
@@ -159,7 +159,7 @@
                             </a>
                         </li>
                         <li class="nav-item ml-2">
-                            <a href="@Url.Action("Carrito", "Home")" class="nav-link mr-2"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="@Url.Action("Carrito", "Carrito")" class="nav-link mr-2"><i class="fas fa-shopping-cart"></i></a>
                         </li>
                         <li class="nav-item ml-2">
                             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
@@ -172,6 +172,35 @@
             </div>
         </nav>
     </header>
+
+    <!--LOGIN-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close p-4" data-bs-dismiss="modal" aria-label="Close" style="position: absolute; top: 0; right: 0;"></button>
+                    <div class="row p-0">
+                        <div class="col-md-6 p-4">
+                            <img src="~/Recursos/Img/Login/logine01.jpg" alt="Imagen de Usuario" class="img-fluid">
+                        </div>
+                        <div class="col-md-6 pt-5 px-5">
+                            <h2 style="font-size:bold;">Suscríbete</h2>
+                            <p class="pt-2">Regístrese para recibir acceso temprano a nuestras ofertas. Nuestra selección de productos es amplia y ofrece algo para todos. Compra ahora y ahorra.</p>
+
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                                </div>
+                                <br />
+                                <button type="submit" class="btn btn-dark container-fluid">¡No, Gracias!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scroll-->
     <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top">
@@ -268,7 +297,7 @@
     @RenderSection("scripts", required: false)
 
 
-    <script>
+    <!--<script>
         var nav = document.querySelector('nav');
 
         window.addEventListener('scroll', function () {
@@ -281,7 +310,30 @@
             }
         });
 
+    </script>-->
+    <script>
+        var nav = document.querySelector('nav');
+        var currentPage = window.location.pathname.toLowerCase();
+
+        function adjustNavbar() {
+            if ((currentPage === '/' || currentPage === '/home') || (currentPage === '/nosotros' || currentPage === '/about')) {
+                if (window.pageYOffset > 100) {
+                    nav.classList.add('bg-light', 'navbar-light', 'shadow');
+                    nav.classList.remove('navbar-dark');
+                } else {
+                    nav.classList.remove('bg-light', 'navbar-light', 'shadow');
+                    nav.classList.add('navbar-dark');
+                }
+            } else {
+                nav.classList.add('bg-light', 'navbar-light', 'shadow');
+                nav.classList.remove('navbar-dark');
+            }
+        }
+
+        window.addEventListener('scroll', adjustNavbar);
+        window.addEventListener('load', adjustNavbar);
     </script>
+
 
     <script>
 
@@ -294,7 +346,7 @@
         };
 
         function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
                 mybutton.style.display = "block";
             } else {
                 mybutton.style.display = "none";
