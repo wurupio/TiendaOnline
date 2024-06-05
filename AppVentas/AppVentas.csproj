@@ -254,8 +254,6 @@
     <Content Include="Recursos\Img\Noticias\Noticia04.jpg" />
     <Content Include="Recursos\Img\Publicidades\publicidad01.jpeg" />
     <Content Include="Recursos\Img\Publicidades\publicidad02.jpeg" />
-    <Content Include="Recursos\Img\Publicidades\publicidad03.jpeg" />
-    <Content Include="Recursos\Img\Publicidades\publicidad04.jpeg" />
     <Content Include="Recursos\Multimedia\merymodel.mp4" />
     <Content Include="Recursos\Multimedia\ouke.mp4" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -301,6 +299,7 @@
     <Content Include="Views\Home\Iniciar.cshtml" />
     <Content Include="Views\Home\Buscador.cshtml" />
     <Content Include="Views\Carrito\Carrito.cshtml" />
+    <Content Include="Views\Home\Catalogo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

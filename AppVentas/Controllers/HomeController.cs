@@ -27,5 +27,10 @@ namespace AppVentas.Controllers
             return View();
 
         }
+
+        public ActionResult Catalogo()
+        {
+            return View();
+        }
     }
 }
