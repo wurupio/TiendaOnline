@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
     <title>@ViewBag.Title - Merry Model</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Popper.js (Bootstrap dependency) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -23,22 +30,22 @@
 
         /*SCROLL SEARCH*/
         .searchBox .campo::placeholder {
-            color: rgba(255, 255, 255, 0.7); 
+            color: rgba(255, 255, 255, 0.7);
         }
 
         .searchBox.scrolled .campo::placeholder {
-            color: #333; 
+            color: #333;
         }
 
         .searchBox .campo {
-            color: white; 
+            color: white;
         }
 
         .searchBox.scrolled .campo {
-            color: #333; 
+            color: #333;
         }
         .searchBox.scrolled{
-            border-bottom: 1px solid #333; 
+            border-bottom: 1px solid #333;
         }
 
         /*SEARCH*/
@@ -52,7 +59,7 @@
         }
 
         .closeBtn {
-            color: #333; 
+            color: #333;
         }
 
         .campo {
@@ -131,9 +138,23 @@
                         <li class="nav-item nav-link-item ocultar">
                             <a href="#Nosotros" class="nav-link">Nosotros</a>
                         </li>
+
                         <li class="nav-item nav-link-item ocultar">
                             @Html.ActionLink("Catalogo", "Catalogo", "Home", new { area = "" }, new { @class = "nav-link" })
                         </li>
+
+                        <li class="nav-item nav-link-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Colecciones
+                            </a>
+                            <ul class="dropdown-menu border-0 bg-light" aria-labelledby="navbarDropdownMenuLink" style="color:white;">
+                                <li  style="color:white;">@Html.ActionLink("Summer Top Style", "Summer", "Colecciones", new { area = "" }, new { @class = "dropdown-item" })</li>
+                                <li  style="color:white;">@Html.ActionLink("Scape All Give", "Scape", "Colecciones", new { area = "" }, new { @class = "dropdown-item" })</li>
+                                <li  style="color:white;">@Html.ActionLink("Line At Sour", "Line", "Colecciones", new { area = "" }, new { @class = "dropdown-item" })</li>
+                            </ul>
+                        </li>
+
+
                         <li class="nav-item nav-link-item ocultar">
                             <a class="nav-link" href="#contact-section">Blog</a>
                         </li>

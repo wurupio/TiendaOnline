@@ -162,6 +162,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CarritoController.cs" />
+    <Compile Include="Controllers\ColeccionesController.cs" />
     <Compile Include="Controllers\TiendaController .cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -300,6 +301,9 @@
     <Content Include="Views\Home\Buscador.cshtml" />
     <Content Include="Views\Carrito\Carrito.cshtml" />
     <Content Include="Views\Home\Catalogo.cshtml" />
+    <Content Include="Views\Colecciones\Summer.cshtml" />
+    <Content Include="Views\Colecciones\Scape.cshtml" />
+    <Content Include="Views\Colecciones\Line.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
