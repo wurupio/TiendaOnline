@@ -2,6 +2,624 @@
 @{
     ViewBag.Title = "Catalogo";
 }
-<br /><br />
-<h2>Catalogo</h2>
+<br />
+<br />
 
+<!--COLECCIONES-->
+<div class="container mt-5">
+
+    <div class="row pt-5">
+        <div class="col-md-4">
+            <a href="@Url.Action("Summer", "Colecciones")">
+                <div class="card border-0" style="position: relative;">
+
+                    <img src="~/Recursos/Img/Colecciones/coleccion01.jpg" alt="...">
+
+                    <div class="overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+                        <h1 class="text-center" style="font-weight: bold">SUMMER TOP STYLE</h1>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+
+
+        <div class="col-md-4">
+            <a href="@Url.Action("Scape", "Colecciones")">
+                <div class="card border-0" style="position: relative;">
+
+                    <img src="~/Recursos/Img/Colecciones/coleccion02.jpg" alt="...">
+
+                    <div class="overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+                        <h1 class="text-center" style="font-weight: bold">SCAPE ALL GIVE</h1>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+
+
+        <div class="col-md-4">
+            <a href="@Url.Action("Line", "Colecciones")">
+                <div class="card border-0" style="position: relative;">
+
+                    <img src="~/Recursos/Img/Colecciones/coleccion03.jpg" alt="...">
+
+                    <div class="overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+                        <h1 class="text-center" style="font-weight: bold">LINE AT SOUR</h1>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!--CATALOGO-->
+<div class="container pt-5">
+    <div class="row pt-3">
+        <div class="col">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="d-inline">Nuestro Catálogo</h1>
+            </div>
+
+            <br>
+        </div>
+    </div>
+
+    <div class="row pt-3">
+        <div class="col">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 border-0 position-relative">
+                        <img src="~/Recursos/Img/Catalogo/001.jpg" alt="..." data-bs-toggle="modal" data-bs-target="#productModal1" style="cursor:pointer;">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">
+                                MINI DRESS
+                                <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#productModal1">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </h5>
+                            <p class="card-text mb-0">Precio: $310</p>
+                        </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 border-0 position-relative">
+                        <img src="~/Recursos/Img/Catalogo/002.jpg" alt="..." data-bs-toggle="modal" data-bs-target="#productModal2" style="cursor:pointer;">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">
+                                MINI DRESS
+                                <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#productModal2">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </h5>
+                            <p class="card-text mb-0">Precio: $310</p>
+                        </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 border-0 position-relative">
+                        <img src="~/Recursos/Img/Catalogo/006.jpg" alt="..." data-bs-toggle="modal" data-bs-target="#productModal3" style="cursor:pointer;">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">
+                                MINI DRESS
+                                <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#productModal3">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </h5>
+                            <p class="card-text mb-0">Precio: $310</p>
+                        </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card mb-4 border-0 position-relative">
+                        <img src="~/Recursos/Img/Catalogo/004.jpg" alt="..." data-bs-toggle="modal" data-bs-target="#productModal5" style="cursor:pointer;">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">
+                                MINI DRESS
+                                <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#productModal4">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </h5>
+                            <p class="card-text mb-0">Precio: $310</p>
+                        </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 border-0 position-relative">
+                        <img src="~/Recursos/Img/Catalogo/005.jpg" alt="..." data-bs-toggle="modal" data-bs-target="#productModal5" style="cursor:pointer;">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">
+                                MINI DRESS
+                                <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#productModal5">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </h5>
+                            <p class="card-text mb-0">Precio: $310</p>
+                        </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 border-0 position-relative">
+                        <img src="~/Recursos/Img/Catalogo/003.jpg" alt="..." data-bs-toggle="modal" data-bs-target="#productModal6" style="cursor:pointer;">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">
+                                MINI DRESS
+                                <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#productModal6">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </h5>
+                            <p class="card-text mb-0">Precio: $310</p>
+                        </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card mb-4 border-0 position-relative">
+                        <img src="~/Recursos/Img/Catalogo/007.jpg" alt="..." data-bs-toggle="modal" data-bs-target="#productModal7" style="cursor:pointer;">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">
+                                MINI DRESS
+                                <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#productModal4">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </h5>
+                            <p class="card-text mb-0">Precio: $310</p>
+                        </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 border-0 position-relative">
+                        <img src="~/Recursos/Img/Catalogo/008.jpg" alt="..." data-bs-toggle="modal" data-bs-target="#productModal8" style="cursor:pointer;">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">
+                                MINI DRESS
+                                <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#productModal5">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </h5>
+                            <p class="card-text mb-0">Precio: $310</p>
+                        </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-4 border-0 position-relative">
+                        <img src="~/Recursos/Img/Catalogo/009.jpg" alt="..." data-bs-toggle="modal" data-bs-target="#productModal9" style="cursor:pointer;">
+                        <div class="card-body d-flex flex-column text-center">
+                            <h5 class="card-title mb-1">
+                                MINI DRESS
+                                <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#productModal6">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </h5>
+                            <p class="card-text mb-0">Precio: $310</p>
+                        </div>
+                        <a class="list-inline-item" href="#"><i class="far fa-heart position-absolute top-0 end-0 text-white p-2"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--MODALES-->
+<!-- 01-->
+<div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 p-3 border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row pt-3 px-">
+                    <div class="col-md-6">
+                        <img src="~/Recursos/Img/Catalogo/001.jpg" alt="..." class="img-fluid mb-3">
+                    </div>
+                    <div class="col-md-6 pt-4">
+                        <h5>MINI DRESS</h5>
+                        <p>$310</p>
+                        <p>El mini vestido de punto perfecto. Ni demasiado ancho ni demasiado estrecho. Fabricado con tres materiales diferentes y en casi todos los tamaños.</p>
+                        <div>
+                            <h6>Tallas:</h6>
+                            <div id="size-buttons" class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="XS">XS</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="S">S</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="M">M</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="L">L</button>
+                            </div>
+                        </div>
+                        <div class="w-100 pt-3">
+                            <h6>Color:</h6>
+                            <div id="color-buttons" class="d-flex gap-2 mb-3">
+                                <button type="button" class="btn color-btn border-0" style="background-color: orange; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;" data-color="Red"></button>
+                            </div>
+                        </div>
+                        <div class="mt-3 w-100 pt-3">
+                            <button type="button" class="btn btn-dark w-100">Agregar al Carrito</button>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#"><i class="fab fa-facebook fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-sm text-muted"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 02-->
+<div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 p-3 border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row pt-3 px-">
+                    <div class="col-md-6">
+                        <img src="~/Recursos/Img/Catalogo/002.jpg" alt="..." class="img-fluid mb-3">
+                    </div>
+                    <div class="col-md-6 pt-4">
+                        <h5>MINI DRESS</h5>
+                        <p>$310</p>
+                        <p>El mini vestido de punto perfecto. Ni demasiado ancho ni demasiado estrecho. Fabricado con tres materiales diferentes y en casi todos los tamaños.</p>
+                        <div>
+                            <h6>Tallas:</h6>
+                            <div id="size-buttons" class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="XS">XS</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="S">S</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="M">M</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="L">L</button>
+                            </div>
+                        </div>
+                        <div class="w-100 pt-3">
+                            <h6>Color:</h6>
+                            <div id="color-buttons" class="d-flex gap-2 mb-3">
+                                <button type="button" class="btn color-btn border-0" style="background-color: #ffd800; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;" data-color="Red"></button>
+                            </div>
+                        </div>
+                        <div class="mt-3 w-100 pt-3">
+                            <button type="button" class="btn btn-dark w-100">Agregar al Carrito</button>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#"><i class="fab fa-facebook fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-sm text-muted"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 03-->
+<div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 p-3 border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row pt-3 px-">
+                    <div class="col-md-6">
+                        <img src="~/Recursos/Img/Catalogo/006.jpg" alt="..." class="img-fluid mb-3">
+                    </div>
+                    <div class="col-md-6 pt-4">
+                        <h5>MINI DRESS</h5>
+                        <p>$310</p>
+                        <p>El mini vestido de punto perfecto. Ni demasiado ancho ni demasiado estrecho. Fabricado con tres materiales diferentes y en casi todos los tamaños.</p>
+                        <div>
+                            <h6>Tallas:</h6>
+                            <div id="size-buttons" class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="XS">XS</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="S">S</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="M">M</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="L">L</button>
+                            </div>
+                        </div>
+                        <div class="w-100 pt-3">
+                            <h6>Color:</h6>
+                            <div id="color-buttons" class="d-flex gap-2 mb-3">
+                                <button type="button" class="btn color-btn border-0" style="background-color: orange; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;" data-color="Red"></button>
+                            </div>
+                        </div>
+                        <div class="mt-3 w-100 pt-3">
+                            <button type="button" class="btn btn-dark w-100">Agregar al Carrito</button>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#"><i class="fab fa-facebook fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-sm text-muted"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 04-->
+<div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 p-3 border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row pt-3 px-">
+                    <div class="col-md-6">
+                        <img src="~/Recursos/Img/Catalogo/004.jpg" alt="..." class="img-fluid mb-3">
+                    </div>
+                    <div class="col-md-6 pt-4">
+                        <h5>MINI DRESS</h5>
+                        <p>$310</p>
+                        <p>El mini vestido de punto perfecto. Ni demasiado ancho ni demasiado estrecho. Fabricado con tres materiales diferentes y en casi todos los tamaños.</p>
+                        <div>
+                            <h6>Tallas:</h6>
+                            <div id="size-buttons" class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="XS">XS</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="S">S</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="M">M</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="L">L</button>
+                            </div>
+                        </div>
+                        <div class="w-100 pt-3">
+                            <h6>Color:</h6>
+                            <div id="color-buttons" class="d-flex gap-2 mb-3">
+                                <button type="button" class="btn color-btn border-0" style="background-color: black; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;" data-color="Red"></button>
+                            </div>
+                        </div>
+                        <div class="mt-3 w-100 pt-3">
+                            <button type="button" class="btn btn-dark w-100">Agregar al Carrito</button>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#"><i class="fab fa-facebook fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-sm text-muted"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 05-->
+<div class="modal fade" id="productModal5" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 p-3 border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row pt-3 px-">
+                    <div class="col-md-6">
+                        <img src="~/Recursos/Img/Catalogo/005.jpg" alt="..." class="img-fluid mb-3">
+                    </div>
+                    <div class="col-md-6 pt-4">
+                        <h5>MINI DRESS</h5>
+                        <p>$310</p>
+                        <p>El mini vestido de punto perfecto. Ni demasiado ancho ni demasiado estrecho. Fabricado con tres materiales diferentes y en casi todos los tamaños.</p>
+                        <div>
+                            <h6>Tallas:</h6>
+                            <div id="size-buttons" class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="XS">XS</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="S">S</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="M">M</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="L">L</button>
+                            </div>
+                        </div>
+                        <div class="w-100 pt-3">
+                            <h6>Color:</h6>
+                            <div id="color-buttons" class="d-flex gap-2 mb-3">
+                                <button type="button" class="btn color-btn border-0" style="background-color: black; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;" data-color="Red"></button>
+                            </div>
+                        </div>
+                        <div class="mt-3 w-100 pt-3">
+                            <button type="button" class="btn btn-dark w-100">Agregar al Carrito</button>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#"><i class="fab fa-facebook fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-sm text-muted"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 06-->
+<div class="modal fade" id="productModal6" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 p-3 border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row pt-3 px-">
+                    <div class="col-md-6">
+                        <img src="~/Recursos/Img/Catalogo/003.jpg" alt="..." class="img-fluid mb-3">
+                    </div>
+                    <div class="col-md-6 pt-4">
+                        <h5>MINI DRESS</h5>
+                        <p>$310</p>
+                        <p>El mini vestido de punto perfecto. Ni demasiado ancho ni demasiado estrecho. Fabricado con tres materiales diferentes y en casi todos los tamaños.</p>
+                        <div>
+                            <h6>Tallas:</h6>
+                            <div id="size-buttons" class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="XS">XS</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="S">S</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="M">M</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="L">L</button>
+                            </div>
+                        </div>
+                        <div class="w-100 pt-3">
+                            <h6>Color:</h6>
+                            <div id="color-buttons" class="d-flex gap-2 mb-3">
+                                <button type="button" class="btn color-btn border-1" style="background-color: #FFFDF4; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;" data-color="Red"></button>
+                            </div>
+                        </div>
+                        <div class="mt-3 w-100 pt-3">
+                            <button type="button" class="btn btn-dark w-100">Agregar al Carrito</button>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#"><i class="fab fa-facebook fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-sm text-muted"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 07-->
+<div class="modal fade" id="productModal7" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 p-3 border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row pt-3 px-">
+                    <div class="col-md-6">
+                        <img src="~/Recursos/Img/Catalogo/007.jpg" alt="..." class="img-fluid mb-3">
+                    </div>
+                    <div class="col-md-6 pt-4">
+                        <h5>MINI DRESS</h5>
+                        <p>$310</p>
+                        <p>El mini vestido de punto perfecto. Ni demasiado ancho ni demasiado estrecho. Fabricado con tres materiales diferentes y en casi todos los tamaños.</p>
+                        <div>
+                            <h6>Tallas:</h6>
+                            <div id="size-buttons" class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="XS">XS</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="S">S</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="M">M</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="L">L</button>
+                            </div>
+                        </div>
+                        <div class="w-100 pt-3">
+                            <h6>Color:</h6>
+                            <div id="color-buttons" class="d-flex gap-2 mb-3">
+                                <button type="button" class="btn color-btn border-1" style="background-color: black; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;" data-color="Red"></button>
+                            </div>
+                        </div>
+                        <div class="mt-3 w-100 pt-3">
+                            <button type="button" class="btn btn-dark w-100">Agregar al Carrito</button>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#"><i class="fab fa-facebook fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-sm text-muted"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 08-->
+<div class="modal fade" id="productModal8" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 p-3 border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row pt-3 px-">
+                    <div class="col-md-6">
+                        <img src="~/Recursos/Img/Catalogo/008.jpg" alt="..." class="img-fluid mb-3">
+                    </div>
+                    <div class="col-md-6 pt-4">
+                        <h5>MINI DRESS</h5>
+                        <p>$310</p>
+                        <p>El mini vestido de punto perfecto. Ni demasiado ancho ni demasiado estrecho. Fabricado con tres materiales diferentes y en casi todos los tamaños.</p>
+                        <div>
+                            <h6>Tallas:</h6>
+                            <div id="size-buttons" class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="XS">XS</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="S">S</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="M">M</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="L">L</button>
+                            </div>
+                        </div>
+                        <div class="w-100 pt-3">
+                            <h6>Color:</h6>
+                            <div id="color-buttons" class="d-flex gap-2 mb-3">
+                                <button type="button" class="btn color-btn border-1" style="background-color: #FFFDF4; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;" data-color="Red"></button>
+                            </div>
+                        </div>
+                        <div class="mt-3 w-100 pt-3">
+                            <button type="button" class="btn btn-dark w-100">Agregar al Carrito</button>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#"><i class="fab fa-facebook fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-sm text-muted"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 09-->
+<div class="modal fade" id="productModal9" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 p-3 border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row pt-3 px-">
+                    <div class="col-md-6">
+                        <img src="~/Recursos/Img/Catalogo/009.jpg" alt="..." class="img-fluid mb-3">
+                    </div>
+                    <div class="col-md-6 pt-4">
+                        <h5>MINI DRESS</h5>
+                        <p>$310</p>
+                        <p>El mini vestido de punto perfecto. Ni demasiado ancho ni demasiado estrecho. Fabricado con tres materiales diferentes y en casi todos los tamaños.</p>
+                        <div>
+                            <h6>Tallas:</h6>
+                            <div id="size-buttons" class="d-flex gap-2">
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="XS">XS</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="S">S</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="M">M</button>
+                                <button type="button" class="btn btn-outline-dark size-btn" data-size="L">L</button>
+                            </div>
+                        </div>
+                        <div class="w-100 pt-3">
+                            <h6>Color:</h6>
+                            <div id="color-buttons" class="d-flex gap-2 mb-3">
+                                <button type="button" class="btn color-btn border-1" style="background-color: #FFFDF4; width: 40px; height: 40px; border-radius: 50%; cursor: pointer;" data-color="Red"></button>
+                            </div>
+                        </div>
+                        <div class="mt-3 w-100 pt-3">
+                            <button type="button" class="btn btn-dark w-100">Agregar al Carrito</button>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="#"><i class="fab fa-facebook fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-sm me-3 text-muted"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-sm text-muted"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

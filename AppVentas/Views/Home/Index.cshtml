@@ -124,40 +124,49 @@
     </div>
     <div class="row pt-5">
         <div class="col-md-4">
-            <div class="card border-0">
+            <a href="@Url.Action("Summer", "Colecciones")">
+                <div class="card border-0" style="position: relative;">
 
-                <img src="~/Recursos/Img/Colecciones/coleccion01.jpg" alt="...">
+                    <img src="~/Recursos/Img/Colecciones/coleccion01.jpg" alt="...">
 
-                <div class="overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
-                    <h1 class="text-center" style="font-weight: bold">SUMMER TOP STYLE</h1>
+                    <div class="overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+                        <h1 class="text-center" style="font-weight: bold">SUMMER TOP STYLE</h1>
+                    </div>
+
                 </div>
-
-            </div>
+            </a>
         </div>
+
 
         <div class="col-md-4">
-            <div class="card border-0">
+            <a href="@Url.Action("Scape", "Colecciones")">
+                <div class="card border-0" style="position: relative;">
 
-                <img src="~/Recursos/Img/Colecciones/coleccion02.jpg" alt="...">
+                    <img src="~/Recursos/Img/Colecciones/coleccion02.jpg" alt="...">
 
-                <div class="overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
-                    <h1 class="text-center" style="font-weight: bold">SCAPE ALL GIVE</h1>
+                    <div class="overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+                        <h1 class="text-center" style="font-weight: bold">SCAPE ALL GIVE</h1>
+                    </div>
+
                 </div>
-
-            </div>
+            </a>
         </div>
+
 
         <div class="col-md-4">
-            <div class="card border-0">
+            <a href="@Url.Action("Line", "Colecciones")">
+                <div class="card border-0" style="position: relative;">
 
-                <img src="~/Recursos/Img/Colecciones/coleccion03.jpg" alt="...">
+                    <img src="~/Recursos/Img/Colecciones/coleccion03.jpg" alt="...">
 
-                <div class="overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
-                    <h1 class="text-center" style="font-weight: bold">LINE AT SOUR</h1>
+                    <div class="overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+                        <h1 class="text-center" style="font-weight: bold">LINE AT SOUR</h1>
+                    </div>
+
                 </div>
-
-            </div>
+            </a>
         </div>
+
     </div>
 </div>
 
@@ -165,10 +174,12 @@
 <div class="container pt-5">
     <div class="row pt-3">
         <div class="col">
+
             <div class="d-flex justify-content-between align-items-center">
                 <h1 class="d-inline">Nuestro Catálogo</h1>
-                <button class="btn btn-dark float-right">Explorar todo</button>
+                <a href="@Url.Action("Catalogo", "Home")" class="btn btn-dark float-right">Explorar todo</a>
             </div>
+
             <hr>
             <br>
         </div>

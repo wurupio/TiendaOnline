@@ -10,7 +10,7 @@
         <div class="col-lg-8">
             <div class="d-flex justify-content-between">
                 <h2>Tu carrito de compras</h2>
-                <a href="@Url.Action("Index", "Productos")" class="btn btn-link text-dark text-decoration-none">Seguir navegando ></a>
+                <a href="@Url.Action("Catalogo", "Home")" class="btn btn-link text-dark text-decoration-none">Seguir navegando ></a>
             </div>
             <hr />
 
@@ -92,8 +92,6 @@
         </div>
 
 
-
-        <!-- Columna derecha - 30% -->
         <div class="col-lg-4">
             <div class="summary border border-dark border-1 p-5 d-flex flex-column">
                 <h2 class="mb-4">Resumen</h2>
@@ -136,7 +134,7 @@
                     <p>Total</p>
                     <p class="text-end">$310</p>
                 </div>
-                <button class="btn btn-dark w-100 border-0 rounded-0 mt-3">Proceder al Pago</button>
+                <button class="btn btn-dark w-100 border-0 rounded-0 mt-3" data-bs-toggle="modal" data-bs-target="#pago">Proceder al Pago</button>
             </div>
         </div>
 
@@ -145,6 +143,156 @@
 
     </div>
 </div>
+
+<!-- FORMULARIO DE PAGO -->
+<div class="modal fade" id="pago" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body position-relative">
+                <button type="button" class="btn-close position-absolute top-0 end-0 p-3 border-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row pt-3 px-4">
+
+                    <div class="col-md-6 position-relative">
+                        <img src="~/Recursos/Img/Carrito/Pago/pago.jpg" class="img-fluid" alt="Imagen de Pago">
+                        <h1 class="position-absolute top-50 start-50 translate-middle text-white" style="font-weight: bold">MerryModel.</h1>
+                    </div>
+
+                    <div class="col-md-6 p-4">
+                        <h1>Finalizar compra</h1>
+                        <form id="paymentForm">
+                            <div class="mb-4">
+                                <h6>Seleccionar Método de Pago:</h6>
+                                <div class="d-flex gap-3 mb-4">
+                                    <button type="button" class="btn border p-2">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" style="width: 40px;">
+                                    </button>
+                                    <button type="button" class="btn border p-2">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" style="width: 40px;">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingrese su email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Número de Celular</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Ingrese su número de celular" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cardNumber" class="form-label">Número de Tarjeta</label>
+                                <input type="text" class="form-control" id="cardNumber" placeholder="Ingrese su número de tarjeta" required>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3">
+                                    <label for="expiryDate" class="form-label">Fecha de Expiración</label>
+                                    <input type="text" class="form-control" id="expiryDate" placeholder="MM/AA" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="cvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-dark w-100 mb-3">Pagar Ahora</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL DE AGRADECIMIENTO -->
+<div class="modal fade" id="agradecimiento" tabindex="-1" aria-labelledby="agradecimientoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center p-5">
+                <div class="mb-3">
+                    <i class="fas fa-check-circle fa-3x text-success"></i>
+                </div>
+                <h2>Gracias por su compra</h2>
+                <p>Su transacción ha sido completada con éxito.</p>
+                <button type="button" class="btn btn-dark" onclick="window.location.href='@Url.Action("Index", "Home")'">Volver al Inicio</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--NOTICIAS-->
+
+<div class="container mt-5 pt-2 pb-5">
+
+    <div class="row text-center pt-2">
+        <div class="col-12">
+            <h1>¡Mantente conectado!</h1>
+            <p>Únete a nuestra comunidad.</p>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="card border-0">
+                <img src="~/Recursos/Img/Noticias/Noticia01.jpg" alt="...">
+                <div class="card-body">
+                    <p class="card-title"><i class="fas fa-heart" style="color: #cb0b3b;"></i> 382 likes</p>
+                    <p class="card-text"> <span class="highlight" style="font-weight: bold">Some</span>  quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-0">
+                <img src="~/Recursos/Img/Noticias/Noticia02.jpg" alt="...">
+                <div class="card-body">
+                    <p class="card-title"><i class="fas fa-heart" style="color: #cb0b3b;"></i> 159 likes</p>
+                    <p class="card-text"> <span class="highlight" style="font-weight: bold">Some</span>  quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-0">
+                <img src="~/Recursos/Img/Noticias/Noticia03.jpg" alt="...">
+                <div class="card-body">
+                    <p class="card-title"><i class="fas fa-heart" style="color: #cb0b3b;"></i> 204 likes</p>
+                    <p class="card-text"> <span class="highlight" style="font-weight: bold">Some</span>  quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-0">
+                <img src="~/Recursos/Img/Noticias/Noticia04.jpg" alt="...">
+                <div class="card-body">
+                    <p class="card-title"><i class="fas fa-heart" style="color: #cb0b3b;"></i> 526 likes</p>
+                    <p class="card-text"> <span class="highlight" style="font-weight: bold">Some</span> quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br />
+<br />
+
+
+<!-- SCRIPT PARA MANEJAR EL FORMULARIO -->
+<script>
+    document.getElementById('paymentForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // Aquí puedes agregar la lógica para procesar el pago
+
+        // Cerrar el modal de pago
+        $('#pago').modal('hide');
+
+        // Mostrar el modal de agradecimiento
+        $('#agradecimiento').modal('show');
+    });
+</script>
+
+
+
 
 <script>
 

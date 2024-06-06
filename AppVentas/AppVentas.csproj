@@ -163,10 +163,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CarritoController.cs" />
     <Compile Include="Controllers\ColeccionesController.cs" />
-    <Compile Include="Controllers\TiendaController .cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="DAL\DataAccessLayer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -235,6 +233,7 @@
     <Content Include="lib\font-awesome\sprites\solid.svg" />
     <Content Include="Recursos\Css\header.css" />
     <Content Include="Recursos\Css\Inicio.css" />
+    <Content Include="Recursos\Img\Carrito\Pago\pago.jpg" />
     <Content Include="Recursos\Img\Catalogo\001.jpg" />
     <Content Include="Recursos\Img\Catalogo\002.jpg" />
     <Content Include="Recursos\Img\Catalogo\003.jpg" />
@@ -242,11 +241,20 @@
     <Content Include="Recursos\Img\Catalogo\005.jpg" />
     <Content Include="Recursos\Img\Catalogo\006.jpg" />
     <Content Include="Recursos\Img\Catalogo\007.jpg" />
+    <Content Include="Recursos\Img\Catalogo\008.jpg" />
+    <Content Include="Recursos\Img\Catalogo\009.jpg" />
     <Content Include="Recursos\Img\Colecciones\coleccion01.jpg" />
     <Content Include="Recursos\Img\Colecciones\coleccion02.jpg" />
     <Content Include="Recursos\Img\Colecciones\coleccion03.jpg" />
+    <Content Include="Recursos\Img\Colecciones\Summer\s01.jpg" />
+    <Content Include="Recursos\Img\Colecciones\Summer\s02.jpg" />
+    <Content Include="Recursos\Img\Colecciones\Summer\s03.jpg" />
+    <Content Include="Recursos\Img\Colecciones\Summer\s04.jpg" />
+    <Content Include="Recursos\Img\Colecciones\Summer\s05.jpg" />
+    <Content Include="Recursos\Img\Colecciones\Summer\s06.jpg" />
+    <Content Include="Recursos\Img\Colecciones\Summer\s07.jpg" />
+    <Content Include="Recursos\Img\Colecciones\Summer\s08.jpg" />
     <Content Include="Recursos\Img\Login\logine01.jpg" />
-    <Content Include="Recursos\Img\Login\logine02.jpg" />
     <Content Include="Recursos\Img\Nosotros\nosotros01.jpg" />
     <Content Include="Recursos\Img\Nosotros\nosotros02.jpg" />
     <Content Include="Recursos\Img\Noticias\Noticia01.jpg" />
@@ -255,6 +263,7 @@
     <Content Include="Recursos\Img\Noticias\Noticia04.jpg" />
     <Content Include="Recursos\Img\Publicidades\publicidad01.jpeg" />
     <Content Include="Recursos\Img\Publicidades\publicidad02.jpeg" />
+    <Content Include="Recursos\Multimedia\Colecciones\summer.mp4" />
     <Content Include="Recursos\Multimedia\merymodel.mp4" />
     <Content Include="Recursos\Multimedia\ouke.mp4" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -308,7 +317,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\Carrito\" />
-    <Folder Include="Views\Login\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
